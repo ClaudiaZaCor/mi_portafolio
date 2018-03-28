@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+        <ul class="w3-navbar" id="myNavbar">
+          <li><img src="assets/images/CZC.png" alt="logo" class="logo w3-padding-large"></li>
+          <li class="w3-hide-small w3-right">
+            <a href="#contact" class="w3-padding-large">Contacto</a>
+          </li>
+          <li class="w3-hide-small w3-right">
+            <a href="#portfolio" class="w3-padding-large">Portafolio</a>
+          </li>
+          <li class="w3-hide-small w3-right">
+            <a href="#about" class="w3-padding-large">About</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- First Parallax Image with Logo Text -->
+      <div class="bgimg-1 w3-opacity w3-display-container">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+          <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">CLAUDIA <br><span class="w3-hide-small">ZÁRATE CÓRDOVA</span></h1>
+        </div>
+      </div>
+      
+      <!-- Container (About Section) -->
+      <div class="w3-content w3-container w3-padding-64" id="about">
+        <h2 class="w3-center">ACERCA DE MI</h2>
+        <p class="w3-center"><em>Amo diseñar</em></p>
+        <p>¡Hola! Soy Claudia Zarate, UX Designer y bachiller en Ciencias de la Comunicación. <br>
+        Amo la música, la naturaleza, los animales y el arte en todas sus formas. Me motiva aprender cosas nuevas cada día y diseñar soluciones para hacernos la vida mas fácil, feliz y en armonía con nuestro entorno.<br>
+        <br>
+        Elegí ser UX Designer porque mi versatilidad y creatividad me inspiran a crear experiencias inolvidables para las personas lo cual es una buena forma de generar engagement con las marcas.<br>
+        <br>
+        Me proyecto a especializarme en UI Design y en un futuro no muy lejano tener mi propia startup.<br></p>
+        <!--  Profile Picture and Description  -->
+        <div class="w3-row">
+          <div class="w3-col m6 w3-center w3-section">
+            <img src="assets/images/clau.jpg" id="profile" class="w3-circle" alt="Photo of Me">
+          </div>
+      
+          <!-- Hide this text on small devices -->
+          <div class="w3-col m6 w3-hide-small w3-section">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Second Parallax Image with Portfolio Text -->
+      <div class="bgimg-2 w3-display-container" id="portfolio">
+        <div class="w3-display-middle">
+          <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+        </div>
+      </div>
+      
+      <!-- Container (Portfolio Section) -->
+      <div class="w3-content w3-container w3-padding-64">
+        <h2 class="w3-center">MIS PROYECTOS</h2>
+        <p class="w3-center"><em>Aquí están algunos de mis últimos trabajos.<br>Diseñar es resolver problemas</em></p><br>
+      
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+          <div class="w3-col m3">
+            <img src="https://unsplash.it/400/300?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+          </div>
+      
+          <div class="w3-col m3">
+            <img src="https://unsplash.it/400/301?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+          </div>
+      
+          <div class="w3-col m3">
+            <img src="https://unsplash.it/400/302?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+          </div>
+      
+          <div class="w3-col m3">
+            <img src="https://unsplash.it/400/303?random" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" style="max-width:100%">
+        </div>
+      </div>
+      
+      <!-- Third Parallax Image with Portfolio Text -->
+      <div class="bgimg-3 w3-display-container" id="contact">
+        <div class="w3-display-middle">
+          <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACTO</h2>
+        </div>
+      </div>
+      
+      <!-- Container (Contact Section) -->
+      <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center"></h3>
+        <p class="w3-center"><em></em></p>
+      
+        <address class="w3-row w3-padding-32 w3-section">
+          <!--<div class="w3-col m4 w3-container">
+            <!-- Add Google Maps -->
+            <!--<div id="googleMap" class="w3-round-large"></div>
+          </div> -->
+          <div class="w3-col m8 w3-container w3-section">
+            <div class="w3-large w3-margin-bottom">
+              <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i>Ciudad de Lima,Perú<br>
+              <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +51936561575<br>
+              <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: claudia.zacor@gmail.com<br>
+            </div>
+            <p>Si estás interesado en mi perfil laboral, hablar acerca de un proyecto o simplemente <br>
+                decir hola, puedes dejarme un mensaje:</p>
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Nombre">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Mensaje">
+            <a href="Escribir a:claudia.zacor@gmail.com" class="w3-btn w3-section w3-right">ENVIAR</a>
+          </div>
+        </address>
+      </div>
+      
+      <!-- Footer -->
+      <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
+        <div class="w3-half">
+          <a target="_blank" href="https://www.linkedin.com/in/claudiazaratecordova/">
+            <i class="fa fa-linkedin fa-2x"></i>
+          </a>
+          <a target="_blank" href="https://github.com/ClaudiaZaCor">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+        <p class="w3-half">Hecho con <span class="heart-icon">❤</span> por Claudia Zárate</a></p>
+      </footer>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
