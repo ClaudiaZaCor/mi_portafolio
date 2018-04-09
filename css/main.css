@@ -125,11 +125,11 @@ i.fa {
   taransition: color 1s;
 }
 
-.fa-fire:hover {
-  color: #4a4;
+.fa-linkedin:hover {
+  color: plum;
 }
 
-.fa-facebook:hover {
+.fa-github:hover {
   color: #04a;
 }
 
@@ -141,3 +141,16 @@ i.fa {
     height: 250px;
     width: 250px;
  }
+
+.imgmov {
+    height: 60%;
+    width: 50%;
+}
+
+.box {
+    display: inline-block;
+}
+
+.text {
+    padding-top: 60px;
+}
