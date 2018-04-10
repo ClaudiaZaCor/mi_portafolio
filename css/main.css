@@ -6,7 +6,7 @@ body, html {
 }
 
 /*Navbar Styles*/
-.w3-navbar { color: black; }
+.w3-navbar { color: white; }
 .w3-navbar.w3-animate-top { color: #444; }
 .w3-navbar li a:hover { background-color: rgba(0,0,0,0.2); color: #fff; }
 
@@ -19,19 +19,28 @@ a {
 }
 
 .ux {
-    font-size: 20px;
+    font-size: 24px;
+    font-family: "Imprima", sans-serif !important;
+    color: #e91e63;
 }
 
-h2 {
-    font-size: 26px;
-    font-family: "Raleway", sans-serif !important;
+.fucsia {
+    color: #e91e63;
+}
+    
+
+
+span, h1, h2 {
+    font-size: 28px;
+    font-family: 'Imprima', serif; !important;
 }
 
-p {
-    font-family: "Raleway", sans-serif !important;
+p, li {
+    font-family: "Cabin", sans-serif !important;
     justify-content: center;
-    font-size: 15px !important;
+    font-size: 17px !important;
 }
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     opacity: 0.9;
