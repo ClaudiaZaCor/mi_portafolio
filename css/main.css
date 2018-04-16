@@ -27,8 +27,6 @@ a {
 .fucsia {
     color: #e91e63;
 }
-    
-
 
 span, h1, h2 {
     font-size: 28px;
@@ -99,9 +97,12 @@ p, li {
 
 /* Heart Icon */
 .heart-icon {
-  color: #f77;
+  color: plum;
 }
 
+.music-icon {
+    color: coral;
+  }
 
 /* Clearfix Hack */
 .cf:before,
@@ -135,17 +136,18 @@ i.fa {
 }
 
 .fa-linkedin:hover {
-  color: plum;
+  color: #e91e63;;
 }
 
 .fa-github:hover {
-  color: #04a;
+  color: dodgerblue;
 }
 
 .fa-codepen:hover {
   color: #4af;
 }
 
+/* Helpers */
 #profile { 
     height: 250px;
     width: 250px;
@@ -163,3 +165,12 @@ i.fa {
 .text {
     padding-top: 60px;
 }
+
+.but {
+    background-color: plum !important;
+}
+
+.center {
+    margin-left: 430px;
+}
+
